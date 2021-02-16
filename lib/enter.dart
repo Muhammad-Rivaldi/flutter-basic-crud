@@ -22,7 +22,7 @@ class _EntryFormState extends State<EntryForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: contact == null ? Text('Tambah') : Text('Rubah'),
+        title: contact == null ? Text('Add Data') : Text('Update Data'),
         leading: Icon(Icons.keyboard_arrow_left),
       ),
       body: Padding(
@@ -36,7 +36,7 @@ class _EntryFormState extends State<EntryForm> {
                 controller: nameController,
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
-                  labelText: 'Nama Lengkap',             
+                  labelText: 'Name',             
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5.0),
                   ),
@@ -49,7 +49,7 @@ class _EntryFormState extends State<EntryForm> {
                 controller: phoneController,
                 keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
-                  labelText: 'Telepon',                
+                  labelText: 'Contact',                
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5.0),
                   ),
