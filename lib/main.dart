@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     //judul
-      title: 'Tambahkan Daftar',
+      title: 'insert list',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

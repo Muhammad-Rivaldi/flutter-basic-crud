@@ -12,28 +12,28 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   CRUD dbHelper = CRUD();
   Future<List<ClassPenangkap>> future;
+
   @override
   void initState() {
     super.initState();
     updateListView();
   }
-
   void updateListView() {
-    setState(() {
-      future = dbHelper.getContactList();
-    });
-  }
+      setState(() {
+        future = dbHelper.getContactList();
+      });
+    }
 
-  Future<ClassPenangkap> navigateToEntryForm(
-      BuildContext context, ClassPenangkap contact) async {
-    var result = await Navigator.push(context,
-        MaterialPageRoute(builder: (BuildContext context) {
-      return EntryForm(contact);
-    }));
-    return result;
-  }
+    Future<ClassPenangkap> navigateToEntryForm(
+        BuildContext context, ClassPenangkap contact) async {
+          var result = await
+          Navigator.push(context,MaterialPageRoute(builder: (BuildContext context) {
+        return EntryForm(contact);
+      }));
+      return result;
+    }
 
-  Card cardo(ClassPenangkap contact) {
+    Card cardo(ClassPenangkap contact) {
     return Card(
       color: Colors.white,
       elevation: 2.0,

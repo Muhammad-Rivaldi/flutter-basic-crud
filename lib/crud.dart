@@ -1,5 +1,4 @@
 import 'package:sqflite/sqflite.dart';
-// import 'package:sqflite/sqflite_api.dart';
 import 'class_penangkap.dart';
 import 'access_db.dart';
 

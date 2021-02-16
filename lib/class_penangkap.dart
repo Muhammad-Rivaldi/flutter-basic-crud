@@ -2,7 +2,9 @@ class ClassPenangkap {
   int _id;
   String _name;
   String _phone;
+
   ClassPenangkap(this._name, this._phone);
+  
   ClassPenangkap.fromMap(Map<String, dynamic> map) {
     this._id = map['id'];
     this._name = map['name'];
